@@ -463,7 +463,7 @@
     transform: translate(56vw, 60px);
   }
   .process__ingredient--business {
-    transform: translate(22vw, -300px);
+    transform: translate(22vw, -230px);
   }
   .process__ingredient--ux {
     transform: translate(-8vw, 260px);
@@ -478,5 +478,6 @@
     font-size: 32px;
   }
 }
+
 
 </style>
