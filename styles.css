@@ -1,13 +1,5 @@
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@4/themes/translucent.css"/>
 <style>
-:root {
-  --list-text-color: inherit; /* Use "inherit" to take on parent text color */
-  --select-field-arrow-color: black; /* This is the select field arrow color */
-  --list-item-padding-left: 18px; 
-  --list-item-padding-right: 18px;
-  						
-           /* ^^^  Make sure both "line-height" and "min-height" are the same! ^^^  */
-}
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   border: none;
@@ -26,30 +18,7 @@
   z-index: 8;
 }
 .nice-select:after {
-  border-bottom: 2px solid var(--select-field-arrow-color);
-  border-right: 2px solid var(--select-field-arrow-color);
-  content: '';
   display: none;
-  height: 5px;
-  margin-top: -4px;
-  pointer-events: none;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  -webkit-transform-origin: 66% 66%;
-  -ms-transform-origin: 66% 66%;
-  transform-origin: 66% 66%;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  width: 5px; 
-}
-.nice-select.open:after {
-  -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  transform: rotate(-135deg); 
 }
 .nice-select.open .list {
   opacity: 1;
@@ -96,7 +65,7 @@
 .nice-select .list {
   background-color: #fff;
   color: #000;
-  box-shadow: 20px 20px 30px rgba(0,0,0,.25);;
+  box-shadow: 20px 20px 30px rgba(0,0,0,.25);
   opacity: 0;
   overflow: hidden;
   padding: 0;
@@ -162,18 +131,18 @@ span.current {
   background-color: #D68557;
 }
 .nice-select .option.selected {
-  font-weight: bold; 
+  font-weight: bold;
 }
 .nice-select .option.disabled {
   background-color: transparent;
   color: #999;
-  cursor: default; 
+  cursor: default;
 }
 .no-csspointerevents .nice-select .list {
-display: none; 
+  display: none;
 }
 .no-csspointerevents .nice-select.open .list {
-display: block; 
+  display: block;
 }
 input[type=text], input[type=email], input[type=tel]{   
   /* Removes innershadow on form fields on iOS */
