@@ -152,19 +152,6 @@ input[type=text], input[type=email], input[type=tel]{
 }
 </style>
 <style>
-  #canvas-animation {
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-    visibility: hidden;
-    z-index: -1;
-  }
-  #canvas-animation.is-visible {
-    opacity: 1;
-    visibility: visible;
-  }
   .nav__logos {
     left: 20px !important;
     top: 30px !important;
@@ -210,119 +197,6 @@ input[type=text], input[type=email], input[type=tel]{
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .tippy,
-  .u-cursor-large {
-    outline: none;
-  }
-  .tippy-tooltip[data-animatefill] {
-    overflow: visible;
-  }
-  .tippy-backdrop {
-    background-color: transparent !important;
-    width: auto;
-  }
-  .tippy-1 {
-    color: #ffb500;
-  }
-  .tippy-2 {
-    color: #bd7245;
-  }
-  .tippy-1,
-  .tippy-2 {
-    transition: color .5s ease-in-out;
-  }
-  .tippy-1.is-hidden,
-  .tippy-2.is-hidden,
-  .section-intro__link.is-hidden {
-    border-bottom-color: #141414;
-    color: #141414;
-  }
-  .popover {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-  .popover__text-link:hover .popover__text {
-    text-decoration: underline;
-  }
-  .popover__text {
-    color: #111;
-    display: inline-block;
-    font: 700 16px/20px "Suisse Int'l";
-    margin: 0;
-    padding: 0 14px;
-    position: relative;
-    white-space: nowrap;
-  }
-  .popover__text::after {
-    background-color: #f2b949;
-    content: '';
-    height: 35px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 20px;
-    z-index: -1;
-  }
-  .popover__text--first::after {
-    top: -11px;
-    width: 289px;
-  }
-  .popover__text--second::after {
-    top: -8px;
-    width: 289px;
-  }
-  .popover__text--third::after {
-    top: -8px;
-    width: 248px;
-  }
-  .popover__text--fourth::after {
-    top: -8px;
-    width: 272px;
-  }
-  .popover__text--fifth::after {
-    top: -6px;
-    width: 225px;
-  }
-  .popover--2 .popover__text::after {
-    background-color: #d68557;
-  }
-  .popover--2 .popover__text--first::after {
-    width: 339px;
-  }
-  .popover--2 .popover__text--second::after {
-    width: 316px;
-  }
-  .popover--2 .popover__text--third::after {
-    width: 300px;
-  }
-  .popover--2 .popover__text--fourth::after {
-    width: 330px;
-  }
-  .popover--2 .popover__text--fifth::after {
-    width: 298px;
-  }
-  .popover--3 .popover__text::after {
-    background-color: #ff5a39;
-  }
-  .popover--3 .popover__text--first::after {
-    width: 285px;
-  }
-  .popover--3 .popover__text--second::after {
-    top: -9px;
-    width: 327px;
-  }
-  .popover--3 .popover__text--third::after {
-    width: 290px;
-  }
-  .popover--3 .popover__text--fourth::after {
-    top: -9px;
-    width: 214px;
-  }
-  .popover--3 .popover__text--fifth::after {
-    top: -7px;
-    width: 250px;
-  }
   .gallery__item-text {
     font-size: 15px;
     line-height: 21px;
@@ -355,67 +229,6 @@ input[type=text], input[type=email], input[type=tel]{
     .nav__logos {
       left: 50px !important;
       top: 40px !important;
-    }
-    .popover__text {
-      font-size: 26px;
-      line-height: 33px;
-      padding: 0 20px;
-    }
-    .popover__text::after {
-      height: 55px;
-    }
-    .popover__text--first::after {
-      top: -15px;
-      width: 463px;
-    }
-    .popover__text--second::after {
-      top: -14px;
-      width: 463px;
-    }
-    .popover__text--third::after {
-      top: -11px;
-      width: 398px;
-    }
-    .popover__text--fourth::after {
-      top: -10px;
-      width: 435px;
-    }
-    .popover__text--fifth::after {
-      top: -7px;
-      width: 359px;
-    }
-    .popover--2 .popover__text--first::after {
-      width: 544px;
-    }
-    .popover--2 .popover__text--second::after {
-      width: 506px;
-    }
-    .popover--2 .popover__text--third::after {
-      width: 481px;
-    }
-    .popover--2 .popover__text--fourth::after {
-      width: 530px;
-    }
-    .popover--2 .popover__text--fifth::after {
-      width: 477px;
-    }
-    .popover--3 .popover__text--first::after {
-      width: 457px;
-    }
-    .popover--3 .popover__text--second::after {
-      top: -8px;
-      width: 527px;
-    }
-    .popover--3 .popover__text--third::after {
-      width: 466px;
-    }
-    .popover--3 .popover__text--fourth::after {
-      top: -13px;
-      width: 341px;
-    }
-    .popover--3 .popover__text--fifth::after {
-      top: -10px;
-      width: 400px;
     }
   }
 </style>
