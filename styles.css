@@ -106,6 +106,12 @@
   overflow-x: hidden;
 }
 
+@media (max-width: 479px) {
+  .process {
+    height: 45vh;
+  }
+}
+
 .process {
   align-items: center;
   background-color: #141414;
